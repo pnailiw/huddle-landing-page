@@ -1,0 +1,139 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url('../images/bg-desktop.svg') no-repeat hsl(257, 40%, 49%);
+    font-size: 1.6rem;
+    color: #fff;
+    height: 100vh;
+}
+
+.header img {
+    margin: 85px 60px;
+    max-width: 215px;
+}
+
+.container {
+    display: flex;
+}
+
+
+.container .image-ilustration img {
+    margin-left: 60px;
+}
+
+.container .description {
+    margin: 45px 50px;
+}
+
+.container .description h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 4rem;
+    line-height: 52px;
+    max-width: 500px;
+    padding: 5px;
+}
+
+.container .description p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 13px;
+    max-width: 520px;
+    font-size: 1.8rem;
+    line-height: 28px;
+    padding: 5px;
+}
+
+.container .description ul li{
+    padding: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.container .description .register {
+    color: hsl(257, 40%, 49%); 
+    background-color: #fff;
+    display: inline-block;
+    padding: 16px 63px;
+    font-size: 2rem;
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.2s ease-in-out;
+}
+
+.container .description .register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 50px 0px;
+}
+
+.social{
+    display: flex;
+    justify-content: end;
+    margin-right: 90px;
+}
+
+.social a{
+    color: #fff;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    padding: 10px; 
+    margin: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.social a .fa-facebook-f {
+    padding: 0px 3px;
+}
+
+.social a:hover {
+    color:  hsl(300, 69%, 71%);
+    cursor: pointer;
+    border: 1px solid  hsl(300, 69%, 71%);;
+}
+
+@media (max-width: 1200px){
+    body {
+        background: url('../images/bg-mobile.svg')  no-repeat hsl(257, 40%, 49%);
+        background-size: cover;
+    }
+    
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .image-ilustration img {
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px 60px;
+    }
+
+    .container .description {
+        text-align: center;
+    }
+
+    .container .description p {
+        margin-bottom: 25px;
+    }
+
+    .container .description ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    
+    .social {
+        justify-content: center;
+        margin: 10px 0;
+    }
+}
